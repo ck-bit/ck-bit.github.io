@@ -12,3 +12,9 @@ document.getElementById("AboutMeButton").onclick = function() {
   });
 };
 
+document.getElementById("ProjectsButton").onclick = function() {
+    document.getElementById("projects").scrollIntoView({
+        behavior: "smooth"
+    });
+}
+
