@@ -55,7 +55,8 @@
     <div class="container">
       <section class="greeting-container" id="greeting">
         <div class="container justify-content-center align-items-center text-center"> 
-        <h1 data-aos="fade-in" class="display-1 text-white">
+        <h1 data-aos="fade-in " data-aos-duration="1000"
+    data-aos-easing="ease-in-out" class="display-1 text-white">
           Hi, I'm Carson. Nice to meet you.
         </h1>
         <button class="btn btn-outline-light mt-4" id="AboutMeButton"> About Me </button>
@@ -184,74 +185,74 @@
         <div class="row">
             <h1 class="display-2 text-white mt-5">Projects </h1>
         </div>
-        <div class="flex col-auto">
-          <div class="row">
+        <div class="row row-cols-1 row-cols-md-3 g-4 pt-5 ">
+      
             <!-- Project Item 1 -->
-            <div class="col mb-24">
-              <div class="card ">
+            <div class="col ">
+              <div  data-aos="flip-up"  class="card border-top-only border-secondary " style="max-width: 540px;">
+                <h3 class="card-header p-3">Cobble.page</h3>
                 <img
                   src="assets\cobble-projects.png"
                   class="card-img-top"
                   alt="Project 1 Screenshot"
                 />
-                <div class="card-body">
-                  <h2 class="card-title">Cobble.page</h2>
+                <div class="card-body d-flex flex-column justify-content-between text-center">
+            
                   <p class="card-text">
                     Social media web app for UCLA students. Built in Svelte,
                     JavaScript, HTML, CSS, Node.js, and Express.js.
                   </p>
-                  <a href="https://cobble.page" class="btn btn-primary"
+                  <a href="https://cobble.page" class="btn  btn-outline-dark"
                     >View Project</a
                   >
                 </div>
               </div>
             </div>
             <!-- Project Item 2 -->
-            <div class="col-lg-6 m-24">
-              <div class="card project-card m-12">
+            <div   data-aos="flip-up" class="col" style="max-width: 540px;">
+              <div class="card border-top-only border-secondary">
+                <h3 class="card-header p-3">Photoshare</h3>
                 <img
                   src="photoshare/home-page.png"
                   class="card-img-top"
                   alt="Project 2 Screenshot"
                 />
-                <div class="card-body">
-                  <h2 class="card-title font-weight-bold">Photoshare</h2>
+                <div class="card-body d-flex flex-column justify-content-between text-center">
+                 
                   <p class="card-text">
                     Full-stack photo sharing app built in Django and React.
                   </p>
                   <a
                     href="https://github.com/ck-bit/photoshare"
-                    class="btn btn-primary"
+                    class="btn btn-outline-dark"
                     >View Project</a
                   >
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <!-- Project Item 3 -->
-        <div class="col-lg-6">
-          <div class="card project-card m-12">
-            <img
-              src="ad-spend tracker\ad spend tracker.png"
-              class="card-img-top"
-              alt="Project 3 Screenshot"
-            />
-            <div class="card-body">
-              <h2 class="card-title">Ad Spend App</h2>
-              <p class="card-text">
-                Full-stack ad spend app built in Flask and React.
-              </p>
-              <a
-                href="https://github.com/ck-bit/adspend-app"
-                class="btn btn-primary"
-                >View Project</a
-              >
+           <!-- Project Item 3 -->
+           <div class="col">
+            <div  data-aos="flip-up" class="card border-top-only border-secondary " style="max-width: 540px;">
+              <h3 class="card-header p-3 ">Ad Spend App</h3>
+              <img src="assets/ast.png" class="card-img-top" alt="Project 3 Screenshot"/>
+              <div class="card-body d-flex flex-column justify-content-between text-center" >
+                <p class="card-text">
+                  Full-stack ad spend app built in Flask and React. Used to manage Ad Spend across 3 service providers. 
+                </p>
+                <a href="https://github.com/ck-bit/adspend-app" class="btn btn-outline-dark">View Project</a>
+              </div>
             </div>
           </div>
+          
         </div>
+
+        <div class="text-center">
+          <button class="btn btn-outline-light mt-5 " id="ContactButton"> Get in touch </button>
+         </div>
+
       </section>
+
+
     </div>
 
     <!-- Bootstrap core JS-->
