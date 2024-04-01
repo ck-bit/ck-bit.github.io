@@ -1,0 +1,53 @@
+
+
+// Variable overrrides
+$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+$h1-font-size:                $font-size-base * 5 !default;
+$h2-font-size:                $font-size-base * 4 !default;
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+
+body {
+    background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
+    background-attachment: fixed; /* Keep the gradient fixed during scrolling */
+}
+
+.greeting-container{
+    display: flex;
+   
+    min-height: 100vh;
+    align-items: center;
+    justify-items: center;
+}
+.about-me-container{
+    display: flex;
+ min-height: 100vh;
+ align-items: start;
+
+
+}
+
+.projects-container {
+min-height:100vh
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Apply the animation to your element */
+.fade-in {
+    opacity: 0; /* Start invisible */
+    animation-name: fadeIn;
+    animation-duration: 2s; /* Duration of the animation */
+    animation-fill-mode: forwards; /* Keeps the element visible after the animation ends */
+}
+
