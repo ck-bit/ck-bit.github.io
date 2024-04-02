@@ -1,20 +1,23 @@
 
 
 // Variable overrrides
-$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+$font-size-base:              1rem !default; 
 $h1-font-size:                $font-size-base * 5 !default;
 $h2-font-size:                $font-size-base * 4 !default;
-$primary: rgba(96, 35, 96, 0.599);
+$primary: rgba(100, 98, 220, 0.677);
 $secondary: rgb(173, 131, 200);
-
+$navbar-light-toggler-border-color: none;
+$navbar-dark-toggler-icon-bg: url("data:image/svg+xml, svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke'#ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-gantt-chart'><path d='M8 6h10'/><path d='M6 12h9'/><path d='M11 18h7'/></svg>");
+$navbar-light-toggler-icon-bg: url("../assets/menu.png");
+$navbar-toggler-focus-width:    0px;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-
-
 body {
+
+    position: relative;
     background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
-    background-attachment: fixed; /* Keep the gradient fixed during scrolling */
+    background-attachment: fixed; 
 }
 
 .greeting-container{
@@ -25,10 +28,9 @@ body {
     justify-items: center;
 }
 .about-me-container{
-    display: flex;
+display: flex;
  min-height: 100vh;
  align-items: start;
-
 
 }
 
@@ -39,16 +41,15 @@ body {
 }
 .card-img-top {
    height: 300px;
-  object-fit: contain; /* Keeps the aspect ratio, may result in empty space on sides/top */
+  object-fit: contain; 
 }
 
 .projects-container {
-
-min-height:100vh
+    min-height:100vh
 }
 
 .border-top-only {
-    border-top: 4px solid #007bff; /* Example uses a solid blue border */
+    border-top: 4px solid #007bff; 
     border-right: none;
     border-bottom: none;
     border-left: none;
@@ -69,11 +70,11 @@ min-height:100vh
     cursor: pointer;
     padding: 5px 15px;
     border: none;
-    background: rgba(255, 255, 255, 0.173); /* Translucent background */
+    background: rgba(255, 255, 255, 0.173); 
     border-radius: 5px;
   }
   .copy-button:hover {
-    background: rgba(255, 255, 255, 0.09); /* Darker translucent background on hover */
+    background: rgba(255, 255, 255, 0.09); 
   }
   .copy-button i {
     margin-right: 5px;
@@ -83,7 +84,6 @@ min-height:100vh
     position: absolute;
     display:none;
     top:-18px;
-     /* Adjust as needed */
     left: 70px;
   
     background-color: rgba(41, 60, 41, 0.5);
@@ -95,9 +95,7 @@ min-height:100vh
   .copy-icon {
     width: 16px;
     height: 16px;
-
   }
-
 
 
 
@@ -110,11 +108,10 @@ min-height:100vh
     }
 }
 
-/* Apply the animation to your element */
 .fade-in {
-    opacity: 0; /* Start invisible */
+    opacity: 0; 
     animation-name: fadeIn;
-    animation-duration: .1s; /* Duration of the animation */
-    animation-fill-mode: forwards; /* Keeps the element visible after the animation ends */
+    animation-duration: .1s; 
+    animation-fill-mode: forwards; 
 }
 
