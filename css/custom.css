@@ -11862,6 +11862,11 @@ body {
   align-items: start;
 }
 
+.contact-container {
+  display: flex;
+  min-height: 100vh;
+}
+
 .card-img-top {
   height: 300px;
   object-fit: contain; /* Keeps the aspect ratio, may result in empty space on sides/top */
@@ -11878,6 +11883,41 @@ body {
   border-left: none;
 }
 
+.copy-button {
+  position: relative;
+  cursor: pointer;
+  padding: 5px 15px;
+  border: none;
+  background: rgba(255, 255, 255, 0.173); /* Translucent background */
+  border-radius: 5px;
+}
+
+.copy-button:hover {
+  background: rgba(255, 255, 255, 0.09); /* Darker translucent background on hover */
+}
+
+.copy-button i {
+  margin-right: 5px;
+}
+
+.success-message {
+  display: none;
+  position: absolute;
+  display: none;
+  top: -18px;
+  /* Adjust as needed */
+  left: 70px;
+  background-color: rgba(41, 60, 41, 0.5);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.copy-icon {
+  width: 16px;
+  height: 16px;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -11890,7 +11930,7 @@ body {
 .fade-in {
   opacity: 0; /* Start invisible */
   animation-name: fadeIn;
-  animation-duration: 2s; /* Duration of the animation */
+  animation-duration: 0.1s; /* Duration of the animation */
   animation-fill-mode: forwards; /* Keeps the element visible after the animation ends */
 }
 

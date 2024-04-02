@@ -15,150 +15,179 @@
     <link href="css/custom.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
-  <header> 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-b">
-
-    <div class="flex-row ms-20"> 
-    
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarResponsive"
-          aria-controls="navbarResponsive"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ">
-            <li class="nav-item active">
-              <a class="nav-link" href="#about-me">About Me</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects </a>
-            </li>
-          </ul>
-   
-        </div>
+  <header>
+    <nav class="navbar navbar-expand-lg p-4 fixed-top">
+      <a class="navbar-brand text-white" href="#"> Carson Kim</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon text-white"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#about-me">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#contact">Contact</a>
+          </li>
+        </ul>
       </div>
-  
     </nav>
   </header>
   <body>
     <!-- Navigation-->
-   
+
     <!-- Page Content-->
 
-    <div class="container">
+    <div class="container mt-5">
       <section class="greeting-container" id="greeting">
-        <div class="container justify-content-center align-items-center text-center"> 
-        <h1 data-aos="fade-in " data-aos-duration="1000"
-    data-aos-easing="ease-in-out" class="display-1 text-white">
-          Hi, I'm Carson. Nice to meet you.
-        </h1>
-        <button class="btn btn-outline-light mt-4" id="AboutMeButton"> About Me </button>
-      </div>
+        <div
+          class="container justify-content-center align-items-center text-center"
+        >
+          <h1
+            data-aos="fade-in "
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            class="display-1 text-white"
+          >
+            Hi, I'm Carson. Nice to meet you.
+          </h1>
+          <button class="btn btn-outline-light mt-4" id="AboutMeButton">
+            About Me
+          </button>
+        </div>
       </section>
-      <section class="about-me-container" id="about-me">
-
-        <div class="flex-column items-center justify-content-center"> 
-        <h2 class="display-2 text-white mt-5"> About Me </h2>
-        <p data-aos="fade-up" class="div text-white lead pt-5 pb-4">
-          I'm a fullstack developer and recent graduate from the University of
-          California, Los Angeles (UCLA), with a degree in Linguistics and
-          Computer Science. I have experience in building web and mobile
-          applications using modern frameworks and technologies. I am a
-          continuous learner who is eager to provide my skills, collaborate with
-          others, and deliver great work.
-        </p>
-        <section id="skills" class="text-white py-2 ">
-          <div class="container">
-              <h3 class="mb-5"> I've worked with...</h3>
+      <section class="about-me-container py-5" id="about-me">
+        <div class="flex-column items-center justify-content-center">
+          <h2 class="display-2 text-white mt-5">About Me</h2>
+          <p data-aos="fade-up" class="div text-white lead pt-5 pb-4">
+            I'm a fullstack developer and recent graduate from the University of
+            California, Los Angeles (UCLA), with a degree in Linguistics and
+            Computer Science. I have experience in building web and mobile
+            applications using modern frameworks and technologies. I am a
+            continuous learner who is eager to provide my skills, collaborate
+            with others, and deliver great work.
+          </p>
+          <section id="skills" class="text-white py-2">
+            <div class="container">
+              <h3 class="mb-5">I've worked with...</h3>
               <div class="row row-cols-1 row-cols-md-3 g-4">
-                  <!-- Front-end Development -->
-                  <div class="col">
-                      <div data-aos="fade-up" class="card h-100 shadow border-top-only ">
-                          <div class="card-body d-flex flex-column justify-content-between">
-                              <h4 class="card-title fw-bold text-center">Front-end</h4>
-                        
-                                <ul class="list-group list-group-flush"> 
-                                      <li class="list-group-item" >HTML5 & CSS3  </li>
-                                      <li class="list-group-item"> CSS3 </i> </li> 
-                                      <li class="list-group-item">TypeScript and JavaScript (ES6+)  </i></i></li>
-                                      <li class="list-group-item">Frameworks: React.js, Angular, React Native </i> </li>
-                                      <li class="list-group-item">Tools: Webpack, Babel, Tailwind CSS, SASS, LESS</li>
-                                      <li class="list-group-item" ></li>
-                                  </ul>
-                           
-                              <div class="container text-center"> 
-                              <i class="p-2 fas fa-brands fa-html5 fa-2x"></i> 
-                              <i class="p-2 fas fa-brands fa-css3-alt fa-2x"></i>
-                              <i class="p-2 fas fa-brands fa-js fa-2x"> </i>
-                              <i class="p-2 fas fa-brands fa-react fa-2x"></i>
-                            </div>
+                <!-- Front-end Development -->
+                <div class="col">
+                  <div
+                    data-aos="fade-up"
+                    class="card h-100 shadow border-top-only"
+                  >
+                    <div
+                      class="card-body d-flex flex-column justify-content-between"
+                    >
+                      <h4 class="card-title fw-bold text-center">Front-end</h4>
 
-                          
-                          </div>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">HTML5 & CSS3</li>
+                        <li class="list-group-item">CSS3</li>
+                        <li class="list-group-item">
+                          TypeScript and JavaScript (ES6+)
+                        </li>
+                        <li class="list-group-item">
+                          Frameworks: React.js, Angular, React Native
+                        </li>
+                        <li class="list-group-item">
+                          Tools: Webpack, Babel, Tailwind CSS, SASS, LESS
+                        </li>
+                        <li class="list-group-item"></li>
+                      </ul>
+
+                      <div class="container text-center">
+                        <i class="p-2 fas fa-brands fa-html5 fa-2x"></i>
+                        <i class="p-2 fas fa-brands fa-css3-alt fa-2x"></i>
+                        <i class="p-2 fas fa-brands fa-js fa-2x"></i>
+                        <i class="p-2 fas fa-brands fa-react fa-2x"></i>
                       </div>
+                    </div>
                   </div>
-                  <!-- Back-end Development -->
-                  <div class="col">
-                      <div data-aos="fade-up" class=" card h-90 shadow border-top-only ">
-                          <div class="card-body d-flex flex-column justify-content-between">
-                              <h4 class="card-title fw-bold text-center">Back-end</h4>
-                              <p class="card-text">
-                    
-                                  <ul class="list-group list-group-flush ">
-                                      <li class="list-group-item" >Node.js, Express.js, Python, Django</li>
-                                      <li class="list-group-item">Databases: PostgreSQL, MongoDB</li>
-                                      <li class="list-group-item">RESTful APIs & GraphQL</li>
-                                      <li class="list-group-item">Authentication & Authorization</li>
-                                      <li class="list-group-item">Cloud Services: AWS </li>
-                                  </ul>
-                              </p>
-                              <div class="container text-center " id="icons"> 
-                                <i class="p-2 fa-brands fa-python  fa-2x"></i>
-                                <i class=" p-2 fa-solid fa-database  fa-2x"> </i>
-                                <i class=" p-2 fa-brands fa-aws fa-2x"></i>
-                                <i class=" p-2 fa-brands fa-node fa-2x"></i>
-                              </div>
-                          </div>
+                </div>
+                <!-- Back-end Development -->
+                <div class="col">
+                  <div
+                    data-aos="fade-up"
+                    class="card h-90 shadow border-top-only"
+                  >
+                    <div
+                      class="card-body d-flex flex-column justify-content-between"
+                    >
+                      <h4 class="card-title fw-bold text-center">Back-end</h4>
+
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                          Node.js, Express.js, Python, Django
+                        </li>
+                        <li class="list-group-item">
+                          Databases: PostgreSQL, MongoDB
+                        </li>
+                        <li class="list-group-item">RESTful APIs & GraphQL</li>
+                        <li class="list-group-item">
+                          Authentication & Authorization
+                        </li>
+                        <li class="list-group-item">Cloud Services: AWS</li>
+                      </ul>
+
+                      <div class="container text-center" id="icons">
+                        <i class="p-2 fa-brands fa-python fa-2x"></i>
+                        <i class="p-2 fa-solid fa-database fa-2x"> </i>
+                        <i class="p-2 fa-brands fa-aws fa-2x"></i>
+                        <i class="p-2 fa-brands fa-node fa-2x"></i>
                       </div>
+                    </div>
                   </div>
-                  <!-- DevOps & Version Control -->
-                  <div class="col">
-                      <div data-aos="fade-up" class=" card h-90 shadow border-top-only">
-                          <div class="card-body d-flex flex-column justify-content-between">
-                              <h4 class="card-title fw-bold text-center">DevOps & Version Control</h4>
-                              <p class="card-text">
-    
-                                  <ul class= "list-group list-group-flush">
-                                      <li class="list-group-item" >Git & GitHub</li>
-                                      <li class="list-group-item">Docker, Kubernetes</li>
-                                      <li class="list-group-item">CI/CD pipelines</li>
-                                      <li class="list-group-item">Automated Testing</li>
-                                      <li class="list-group-item" >Monitoring & Logging Tools</li>
-                                  </ul>
-                              </p>
-                              <div class="container text-center " id="icons"> 
-                                <i class="p-2 fa-brands fa-git-alt fa-2x"></i>
-                                <i class=" p-2 fa-brands fa-github fa-2x"></i>
-                                <i class="fa-solid fa-bug fa-2x"></i>
-                      
-                                <i class=" p-2 fa-brands fa-docker fa-2x"></i>
-                              </div>
-                          </div>
+                </div>
+                <!-- DevOps & Version Control -->
+                <div class="col">
+                  <div
+                    data-aos="fade-up"
+                    class="card h-90 shadow border-top-only"
+                  >
+                    <div
+                      class="card-body d-flex flex-column justify-content-between"
+                    >
+                      <h4 class="card-title fw-bold text-center">
+                        DevOps & Version Control
+                      </h4>
+
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Git & GitHub</li>
+                        <li class="list-group-item">Docker, Kubernetes</li>
+                        <li class="list-group-item">CI/CD pipelines</li>
+                        <li class="list-group-item">Automated Testing</li>
+                        <li class="list-group-item">
+                          Monitoring & Logging Tools
+                        </li>
+                      </ul>
+
+                      <div class="container text-center" id="icons">
+                        <i class="p-2 fa-brands fa-git-alt fa-2x"></i>
+                        <i class="p-2 fa-brands fa-github fa-2x"></i>
+                        <i class="fa-solid fa-bug fa-2x"></i>
+                        <i class="p-2 fa-brands fa-docker fa-2x"></i>
                       </div>
+                    </div>
                   </div>
+                </div>
               </div>
-          </div>
-      </section>
-      
-      
-        <!-- <h3 class="text-white "> Skills </h3>
+            </div>
+          </section>
+
+          <!-- <h3 class="text-white "> Skills </h3>
         <strong class="text-white">My expertise includes:</strong>
         <ul>
           <li >
@@ -174,95 +203,161 @@
             Tools: git, Linux, AWS, Docker, Kubernetes, Azure DevOps, npm, yarn
           </li>
         </ul> -->
-        <div class="flex-d text-center flex-column mt-5"> 
-        <button class="btn btn-outline-light " id="ProjectsButton"> Projects </button>
-      </div>
-      </div>
-
+          <div class="flex-d text-center flex-column mt-4">
+            <button class="btn btn-outline-light" id="ProjectsButton">
+              Projects
+            </button>
+          </div>
+        </div>
       </section>
 
-      <section class="projects-container" id="projects">
+      <section class="projects-container py-5" id="projects">
         <div class="row">
-            <h1 class="display-2 text-white mt-5">Projects </h1>
+          <h1 class="display-2 text-white mt-5">Projects</h1>
         </div>
-        <div class="row row-cols-1 row-cols-md-3 g-4 pt-5 ">
-      
-            <!-- Project Item 1 -->
-            <div class="col ">
-              <div  data-aos="flip-up"  class="card border-top-only border-secondary " style="max-width: 540px;">
-                <h3 class="card-header p-3">Cobble.page</h3>
-                <img
-                  src="assets\cobble-projects.png"
-                  class="card-img-top"
-                  alt="Project 1 Screenshot"
-                />
-                <div class="card-body d-flex flex-column justify-content-between text-center">
-            
-                  <p class="card-text">
-                    Social media web app for UCLA students. Built in Svelte,
-                    JavaScript, HTML, CSS, Node.js, and Express.js.
-                  </p>
-                  <a href="https://cobble.page" class="btn  btn-outline-dark"
-                    >View Project</a
-                  >
-                </div>
-              </div>
-            </div>
-            <!-- Project Item 2 -->
-            <div   data-aos="flip-up" class="col" style="max-width: 540px;">
-              <div class="card border-top-only border-secondary">
-                <h3 class="card-header p-3">Photoshare</h3>
-                <img
-                  src="photoshare/home-page.png"
-                  class="card-img-top"
-                  alt="Project 2 Screenshot"
-                />
-                <div class="card-body d-flex flex-column justify-content-between text-center">
-                 
-                  <p class="card-text">
-                    Full-stack photo sharing app built in Django and React.
-                  </p>
-                  <a
-                    href="https://github.com/ck-bit/photoshare"
-                    class="btn btn-outline-dark"
-                    >View Project</a
-                  >
-                </div>
-              </div>
-            </div>
-           <!-- Project Item 3 -->
-           <div class="col">
-            <div  data-aos="flip-up" class="card border-top-only border-secondary " style="max-width: 540px;">
-              <h3 class="card-header p-3 ">Ad Spend App</h3>
-              <img src="assets/ast.png" class="card-img-top" alt="Project 3 Screenshot"/>
-              <div class="card-body d-flex flex-column justify-content-between text-center" >
+        <div class="row row-cols-1 row-cols-md-3 g-4 pt-5">
+          <!-- Project Item 1 -->
+          <div class="col">
+            <div
+              data-aos="flip-up"
+              class="card border-top-only border-secondary"
+              style="max-width: 540px"
+            >
+              <h3 class="card-header p-3">Cobble.page</h3>
+              <img
+                src="assets\cobble-projects.png"
+                class="card-img-top"
+                alt="Project 1 Screenshot"
+              />
+              <div
+                class="card-body d-flex flex-column justify-content-between text-center"
+              >
                 <p class="card-text">
-                  Full-stack ad spend app built in Flask and React. Used to manage Ad Spend across 3 service providers. 
+                  Social media web app for UCLA students. Built in Svelte,
+                  JavaScript, HTML, CSS, Node.js, and Express.js.
                 </p>
-                <a href="https://github.com/ck-bit/adspend-app" class="btn btn-outline-dark">View Project</a>
+                <a href="https://cobble.page" class="btn btn-outline-dark"
+                  >View Project</a
+                >
               </div>
             </div>
           </div>
-          
+          <!-- Project Item 2 -->
+          <div data-aos="flip-up" class="col" style="max-width: 540px">
+            <div class="card border-top-only border-secondary">
+              <h3 class="card-header p-3">Photoshare</h3>
+              <img
+                src="photoshare/home-page.png"
+                class="card-img-top"
+                alt="Project 2 Screenshot"
+              />
+              <div
+                class="card-body d-flex flex-column justify-content-between text-center"
+              >
+                <p class="card-text">
+                  Full-stack photo sharing app built in Django and React.
+                </p>
+                <a
+                  href="https://github.com/ck-bit/photoshare"
+                  class="btn btn-outline-dark"
+                  >View Project</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Project Item 3 -->
+          <div class="col">
+            <div
+              data-aos="flip-up"
+              class="card border-top-only border-secondary"
+              style="max-width: 540px"
+            >
+              <h3 class="card-header p-3">Ad Spend App</h3>
+              <img
+                src="assets/ast.png"
+                class="card-img-top"
+                alt="Project 3 Screenshot"
+              />
+              <div
+                class="card-body d-flex flex-column justify-content-between text-center"
+              >
+                <p class="card-text">
+                  Full-stack ad spend app built in Flask and React. Used to
+                  manage Ad Spend across 3 service providers.
+                </p>
+                <a
+                  href="https://github.com/ck-bit/adspend-app"
+                  class="btn btn-outline-dark"
+                  >View Project</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="text-center">
-          <button class="btn btn-outline-light mt-5 " id="ContactButton"> Get in touch </button>
-         </div>
-
+          <button class="btn btn-outline-light mt-5" id="ContactButton">
+            Get in touch
+          </button>
+        </div>
       </section>
+      <section
+        class="container contact-container py-5 justify-content-center align-items-center"
+        id="contact"
+      >
+        <div class="col py-3">
+          <h1 class="col display-1 text-white py-5">
+            Let's build something beautiful.
+          </h1>
+          <h5 class="pt-4 text-white">
+            Interested in working together? Feel free to reach out.
+          </h5>
 
+          <div
+            class="container py-5 d-flex flex-row  position-relative"
+          >
+
+          <div class="d-inline-flex align-items-center">
+            <!-- Added position-relative -->
+            <div class="d-flex me-3"> 
+            <i class="text-white me-2 " data-lucide="mail"></i>
+            <h5 class="text-white " id="email">ckbit@proton.me</h5>
+          </div>
+            <div class="flex-d  position-relative">
+              <button class="copy-button d-inline-flex align-items-center justify-items-center py-2" id="copyButton">
+                <i class="copy-icon text-white" data-lucide="copy"></i>
+              </button>
+              <div
+
+                class="fade-in alert alert-success mt-3 success-message"
+                role="alert"
+                id="successMessage"
+              >
+                Copied!
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+    
+      </section>
 
     </div>
 
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://kit.fontawesome.com/d8522c82b3.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/d8522c82b3.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
-      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      lucide.createIcons();
+    </script>
   </body>
 </html>
