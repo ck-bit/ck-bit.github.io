@@ -1,117 +1,138 @@
-
-
 // Variable overrrides
-$font-size-base:              1rem !default; 
-$h1-font-size:                $font-size-base * 5 !default;
-$h2-font-size:                $font-size-base * 4 !default;
+$font-size-base: 1rem !default;
+$h1-font-size: $font-size-base * 5 !default;
+$h2-font-size: $font-size-base * 4 !default;
 $primary: rgba(100, 98, 220, 0.677);
-$secondary: rgb(173, 131, 200);
+$secondary: #4e4376;
+
 $navbar-light-toggler-border-color: none;
 $navbar-dark-toggler-icon-bg: url("data:image/svg+xml, svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke'#ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-gantt-chart'><path d='M8 6h10'/><path d='M6 12h9'/><path d='M11 18h7'/></svg>");
 $navbar-light-toggler-icon-bg: url("../assets/menu.png");
-$navbar-toggler-focus-width:    0px;
+$navbar-toggler-focus-width: 0px;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 body {
-
-    position: relative;
-    background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
-    background-attachment: fixed; 
+  position: relative;
+  background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
+  background-attachment: fixed;
+  padding-top: 56px;
 }
 
-.greeting-container{
-    display: flex;
-   
-    min-height: 100vh;
-    align-items: center;
-    justify-items: center;
+.fixed-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1030;
+  background-color: rgba(
+    40,
+    35,
+    45,
+    0.8
+  ); /* Adjust the opacity or color as needed */
+  backdrop-filter: blur(10px); /* Add a blur effect to the navbar background */
 }
-.about-me-container{
-display: flex;
- min-height: 100vh;
- align-items: start;
 
+a,
+a:visited {
+  text-decoration: none; /* Removes underline */
+}
+.background-img {
+  position: absolute;
+  top: 30;
+  left: 100;
+  z-index: -1;
+  object-fit: cover; /* Maintain aspect ratio */
+
+  opacity: 0.3; /* Adjust image opacity as needed */
+}
+.greeting-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  justify-items: center;
+}
+.about-me-container {
+  display: flex;
+  min-height: 100vh;
+  align-items: start;
 }
 
-
-.contact-container{
-    display: flex;
-    min-height: 100vh;
+.contact-container {
+  display: flex;
+  min-height: 100vh;
 }
 .card-img-top {
-   height: 300px;
-  object-fit: contain; 
+  height: 300px;
+  object-fit: contain;
 }
 
 .projects-container {
-    min-height:100vh
+  min-height: 100vh;
 }
 
 .border-top-only {
-    border-top: 4px solid #007bff; 
-    border-right: none;
-    border-bottom: none;
-    border-left: none;
-  }
-  $spacer: 1rem;
-  $spacers: (
-    0: 0,
-    1: $spacer * .25,
-    2: $spacer * .5,
-    3: $spacer,
-    4: $spacer * 1.5,
-    5: $spacer * 5,
-  );
-  
-  .copy-button {
-    position: relative;
- 
-    cursor: pointer;
-    padding: 5px 15px;
-    border: none;
-    background: rgba(255, 255, 255, 0.173); 
-    border-radius: 5px;
-  }
-  .copy-button:hover {
-    background: rgba(255, 255, 255, 0.09); 
-  }
-  .copy-button i {
-    margin-right: 5px;
-  }
-  .success-message {
-    display: none;
-    position: absolute;
-    display:none;
-    top:-18px;
-    left: 70px;
-  
-    background-color: rgba(41, 60, 41, 0.5);
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
+  border-top: 4px solid #007bff;
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
+}
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 5,
+);
+
+.copy-button {
+  position: relative;
+
+  cursor: pointer;
+  padding: 5px 15px;
+  border: none;
+  background: rgba(255, 255, 255, 0.173);
+  border-radius: 5px;
+}
+.copy-button:hover {
+  background: rgba(255, 255, 255, 0.09);
+}
+.copy-button i {
+  margin-right: 5px;
+}
+.success-message {
+  display: none;
+  position: absolute;
+  display: none;
+  top: -18px;
+  left: 70px;
+
+  background-color: rgba(41, 60, 41, 0.5);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
 }
 
-  .copy-icon {
-    width: 16px;
-    height: 16px;
-  }
-
-
+.copy-icon {
+  width: 16px;
+  height: 16px;
+}
 
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .fade-in {
-    opacity: 0; 
-    animation-name: fadeIn;
-    animation-duration: .1s; 
-    animation-fill-mode: forwards; 
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 0.1s;
+  animation-fill-mode: forwards;
 }
-
